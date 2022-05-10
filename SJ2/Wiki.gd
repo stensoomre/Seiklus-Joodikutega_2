@@ -5,6 +5,6 @@ extends Node
 
 
 func Wiki():
-	print("Wiki")
+	print("Mängija vajutas: WIKI")
 	
-	get_tree().change_scene("res://Wiki.tscn")
+	OS.shell_open("https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley") # insert lenny face

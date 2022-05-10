@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/King-Cat-Slime.mp3-454512ff06c1e435a8b1380fec7c4418.mp3str"
+
+[deps]
+
+source_file="res://Music/King-Cat-Slime.mp3"
+dest_files=[ "res://.import/King-Cat-Slime.mp3-454512ff06c1e435a8b1380fec7c4418.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

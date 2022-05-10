@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Settings.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Buttons/Menu2.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Play.gd" type="Script" id=8]
 [ext_resource path="res://Wiki.gd" type="Script" id=9]
 [ext_resource path="res://Osta.gd" type="Script" id=10]
+[ext_resource path="res://Music/Mech.mp3" type="AudioStream" id=11]
 
 [sub_resource type="DynamicFont" id=2]
 size = 90
@@ -133,12 +134,12 @@ margin_top = 504.0
 margin_right = 624.0
 margin_bottom = 568.0
 
-[node name="Settings" type="Sprite" parent="Background"]
+[node name="Juhtnupud" type="Sprite" parent="Background"]
 position = Vector2( -5, 57 )
 scale = Vector2( 0.459016, 0.49 )
 texture = ExtResource( 3 )
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Background/Settings"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Background/Juhtnupud"]
 anchor_left = -0.829
 anchor_bottom = 1.0
 margin_left = 207.5
@@ -149,18 +150,22 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 1 )
 text = "JUHTNUPUD"
 
-[node name="Node" type="Node" parent="Background/Settings"]
+[node name="Node" type="Node" parent="Background/Juhtnupud"]
 script = ExtResource( 1 )
 
-[node name="Button" type="Button" parent="Background/Settings/Node"]
+[node name="Button" type="Button" parent="Background/Juhtnupud/Node"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 395.0
 margin_top = 318.0
 margin_right = 627.0
 margin_bottom = 400.0
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+autoplay = true
+
 [connection signal="pressed" from="Background/Play/Node/Button" to="Background/Play/Node" method="Play"]
 [connection signal="pressed" from="Background/Wiki/Node/Button" to="Background/Wiki/Node" method="Wiki"]
 [connection signal="pressed" from="Background/Menu_ost/Node/Button" to="Background/Menu_ost/Node" method="Osta"]
 [connection signal="pressed" from="Background/Exit/Node/Button" to="Background/Exit/Node" method="Exit"]
-[connection signal="pressed" from="Background/Settings/Node/Button" to="Background/Settings/Node" method="Settings"]
+[connection signal="pressed" from="Background/Juhtnupud/Node/Button" to="Background/Juhtnupud/Node" method="Settings"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Artifact.mp3-5fab3f4bac2c76f4664d9d608ff18ee5.mp3str"
+
+[deps]
+
+source_file="res://Music/Artifact.mp3"
+dest_files=[ "res://.import/Artifact.mp3-5fab3f4bac2c76f4664d9d608ff18ee5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

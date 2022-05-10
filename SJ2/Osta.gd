@@ -5,4 +5,4 @@ extends Node
 
 
 func Osta():
-	print("Osta")
+	print("Mängija vajutas: OSTA")

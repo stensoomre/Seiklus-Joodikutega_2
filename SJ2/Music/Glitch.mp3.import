@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Glitch.mp3-22eda9bb6ca22940024e690ecd8a5924.mp3str"
+
+[deps]
+
+source_file="res://Music/Glitch.mp3"
+dest_files=[ "res://.import/Glitch.mp3-22eda9bb6ca22940024e690ecd8a5924.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
